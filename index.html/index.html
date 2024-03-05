@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center"> Paragrafos e Linhas</h1>
+        <hr/>
+        <p>Você pode escrever um paragrafo de qualquer jeito usando &lt;p&gt; e &lt;p/&gt; </p>
+        <p>Caso precise quebrar o texto use a Tag &lt;br&gt; como ilustrado abaixo</p><!--&lt representa LESS THAN =(<) e &gt que represetna Greater Than = (>) -->
+        <p>Rosas são vermelhas <br> violetas são azuis</p>
+        <hr/>
+    <h2 align="center">Vamos adicionar alguns simbolos especificos</h2>
+        <hr/>
+        <p>&reg; = marca registrada
+        <br>&trade; = trade mark
+        <br>&copy; = copyright
+        <br>&euro; = euro
+        <br>&sum; = soma
+        <br>&Delta; = delta
+        <br>&larr; = seta esquerda
+        <br>&uarr; = seta cima
+        <br>&darr; = seta baixo
+        <br>&rarr; = seta direita</p>
+        <hr/>
+    <h2 align="center">Vamos adicionar alguns emojis</h2>
+        <hr/>
+        <p>No seu navegador busque o Site: <b>Emojipedia</b></p>
+        &nbsp; Agora basta escolher seu emoji e buscar na ficha tecnica dele o ponto de codigo, sendo necessário copiar a numeração que vem apos o +; como exemplo abaixo: <p> Copie apenas a parte em negrito: U+<b>2620</b>, agora bastar acrescentar essa numeração a <b>&#x</b> (&#x+2620)= &#x2620, criando seus emojis</p>
+        <p>&#x270D</p>
+        <p>&#x2620</p>
+        <p>&#x2622</p>
+        <hr/>
+    <h2 align="center">Vamos adicionar imagens</h2>
+        <hr>
+        <p>É necessário identificar os direitos altorias da imagens. Dessa maneira vamos listar alguns sites para realizar a busca de imagens: Pexels, unsplash e pixabay</p>
+        <p>Ao buscar imagens no google é interessante atentar-se aos tamanhos de imagens, a sua cor podendo ser transparente, branco e etc.</p>
+        <p>Para imagens com mais detalhes, melhor qualidade e tranparência, use PNG</p>
+        <p>Para imagens com mmenos qualidade, mas com melhor compactação JPEG</p>
+        <p>Podemos usar o Gimp para fazer o tratame  nto das imagens</p>
+</body>
+</html>
+
+
+<!-- Codigo Aula -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+
+
+   <head>
+ 
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Site MS</title>
+ 
+   </head>
+ 
+       <body>
+
+            <a href="./paginas/pagina1/">Acesse a pagina</a><!--tag para fazer link, tem que fazer a pagina principal index.html e sempre tem que ter em pastas caso contrario náo vai funcionar-->
+            <a href="">Acesse a pagina </a>
+               <!-- paragrafos/elementos de texto -->
+               <!-- Ancora referente a h1 id -->
+
+                <h1 id="secao1"> </h1> <!--Classe que representa uma identidade da tag-->
+               Esse é um texto exemplo!!!
+           <p>Esse é um <b>texte</b> exemplo!!!</p> <!-- <p></p> Quebra de linha -->
+           <p><b>Esse é um texto exemplo!!!</b><p/>   <!-- <b></b> Negrito -->
+           <i>Esse é um texto exemplo!!!</i>   <!-- <i></i> Italico -->
+           <p><u>Esse é um texto exemplo!!!</u><p/> <!-- <u></u> Sublinhar -->
+           <p><del>texto</del><p/> <!-- <del></del> Censurar -->
+           <p><sup>Esse </sup> é um texto exemplo!!!</p> <!-- <sup></sup> Letras Menores com alimento acima-->
+           <p><sub>Esse </sub> é um texto exemplo!!!</p> <!-- <sub></sub> Letras Menores com alimento abaixo-->
+
+
+
+
+               <!-- Hirarquias -->
+
+           <h1>Título Inicial</h1> <!-- Titulo com fonte 22 -->
+           <h2>Título Inicial</h2> <!-- Titulo com fonte 20 -->
+           <h3>Título Inicial</h3> <!-- Titulo com fonte 18 -->
+           <h4>Título Inicial</h4> <!-- Titulo com fonte 16 -->
+           <h5>Título Inicial</h5> <!-- Titulo com fonte 14 -->
+           <h6>Título Inicial</h6> <!-- Titulo com fonte 12 -->
+
+               <!--Alinhamento-->
+
+           <h1 align="center">Título Inicial</h1> <!-- align=˜center˜ Alinhamento central -->
+           <h1 align="right">Título Inicial</h1> <!-- align=˜right˜ Alinhamento a direita -->
+         
+               <!--Quebra de Linha-->
+
+           <br /> <!-- coloca essa barra por conta de um protocolo de java (pular linha)-->
+               Texto
+           <br />
+           <br />
+           <br />
+           <br />
+         
+           <hr /> <!-- Coloca uma linha-->
+               Texto
+         
+               <!--Tag semanticas-->
+         
+           <strong>Teste</strong> <!--Mesma coisa do Negrito com pequena difereça no CSS-->
+           <big>Teste</big> <!--Aumenta Letra(náo é muito usado)-->
+           <small>Teste</small> <!--Diminui a Letra-->
+
+           <!--tag de código-->
+
+               <pre>
+
+                   p {
+                       color: red;
+                     }
+
+               </pre>
+
+               <code>
+
+                   p {
+                       color: red;
+                     }
+
+            
+                        document.querySelector("html").
+                        addEventListener("click", 
+                        function () {
+                            alert("Ai! Pare de me cutucar!");
+                          });
+               </code>
+                        <hr/>
+        
+                          <!--Lista ordenada e näo ordenada-->
+
+                        <ol>
+                        <li>Abacaxi</li>
+                        <li>pera</li>
+                            <li>maca</li>
+                        </ol>
+
+                        <hr/>
+
+                        <ol type="A">
+                            <li>Abacaxi</li>
+                            <li>pera</li>
+                            <li>maca</li>
+                        </ol>
+
+                        <hr/>
+
+                        <ol start="20"> <!-- comeca com o numero que eu escolhi-->
+                            <li>Abacaxi</li>
+                            <li>pera</li>
+                            <li>maca</li>
+                        </ol>
+                         
+                        <hr/>
+
+                        <ul> <!--Lista náo ordenada-->
+                            <li>Abacaxi</li>
+                            <li>pera</li>
+                            <li>maca</li>
+                        </ul>
+
+                        <hr/>
+
+                        <ul type="square"><!--Sao formas diferentes de uma ordencáo-->
+                            <li>Abacaxi</li>
+                            <li>pera</li>
+                            <li>maca</li>  
+                        </ul>
+
+ <!--Imagem e acessibilidade--><!--Importante tag "title" e "alt" em imagens, usar no meio do espaco o hifen, por conta de cegos-->
+<img src="../Projeto de interface gabriel.html/imagens/zoo-8378189_1920.jpg" width="300" height="500" title="arara-no-galho-da-arvore" alt=""/> <!--Tag utilizada para buscar imagens na Pasta do seu computador e a tag width(largura) height(altura)-->
+                     
+<img src="../Projeto de interface gabriel.html/imagens/zoo-8378189_640.jpg">
+
+<!--inicio da Ancora-->
+<p><a href="#secao1">va para o topo da pagina</a> <!--QUANDO COLOCAR O # voce puxa uma identidade que esta na pagina-->
+</p>
+
+
+       </body>
+</html>
